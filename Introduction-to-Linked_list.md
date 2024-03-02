@@ -161,3 +161,31 @@
                 tmp->ptr = Node_ith; // assessing address of tmp
             }
         ```
+### Deleting node:
++ Pop:
+    ```
+  int pop(struct Node** head){
+    struct Node *tmp = *head;
+    *head = tmp->ptr; //head points to next node
+    int val_return = tmp->val;
+    free(tmp);
+    return val_return;
+   }  
+    ```
++ Pop_back:
+   int pop_back(struct Node* head){
+    struct Node* tmp = head;
+    while(tmp->ptr->ptr != NULL){//tmp points to the node before the last node
+        tmp = tmp->ptr; //tmp points to last node
+    }
+    int val_return = tmp->ptr->val;
+    free(tmp->ptr);
+    tmp->ptr = NULL;
+    return val_return;
+  }
+
+### Editing:
+   Just bring the ptr to the position that needs to changed and change the value
+
+### Finding:
+    Finding the node should use the algorithm linear search  
