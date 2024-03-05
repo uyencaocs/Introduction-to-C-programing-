@@ -1,9 +1,9 @@
 # Introduction to Pointer 
-## A pointer is an independent valriable used to stores menory address of another variable as its value
-   ## <data type>* name --> declar pointer 
+## A pointer is an independent valriable used to stores memory address of another variable as its value
+   ## <data type>* name --> declare pointer 
     data type of poiner to same data type of val
     **void can point any data types(bult-in)**
-    operater & used together pointer valriable to get the menory address
+    operater & used together pointer valriable to get the memory address
     ex:
     ```
     #include <stdio.h>
@@ -56,6 +56,13 @@
         return 0;
     }
     ```
+
+### Pointer and function:
+    
+
+## pointer-to-pointer:
+   pointer to pointer stores value of pointer 
     
 ## Dynamic array and pointer 
+   
    
