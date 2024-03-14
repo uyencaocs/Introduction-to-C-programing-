@@ -6,7 +6,7 @@
         -----> To solve the problem of fixing array length, they create dynamic array. But if the number of elements in the array is too large , copying data to the dynamic array takes a lot of time 
         ***Linked_list was born to solve these problems.  
 ## what is Linked_list?
-    Linked_list is an array not consecutive, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
+    Linked_list is an array not consecutive, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list. Linked list hasn't length(can use ramdom access)
     + The consecutive elements are connected by pointers.
     + The size of a linked list is not fixed.
     + The last node of the linked list points to null.
@@ -184,8 +184,11 @@
     return val_return;
   }
 
++ 
+
 ### Editing:
    Just bring the ptr to the position that needs to changed and change the value
 
 ### Finding:
     Finding the node should use the algorithm linear search  
+
